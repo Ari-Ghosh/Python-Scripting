@@ -8,9 +8,9 @@ def search_files(dir_path, file_name):
             return os.path.join(root, file_name)
     return None
 
-csv_path = "file.csv"
-dir_path = "/Users/arijitghosh/Documents/Codes"
-write_path = "/Users/arijitghosh/Downloads/found_files.zip"
+csv_path = "CSV File Name"
+dir_path = "Directory to search files and sub-folders"
+write_path = "Directory to write the files"
 
 found_files = []
 
