@@ -10,7 +10,7 @@ def search_files(dir_path, file_name):
 
 csv_path = "file.csv"
 dir_path = "/Users/arijitghosh/Documents/Codes"
-write_path = "/Users/arijitghosh/Downloads"
+write_path = "/Users/arijitghosh/Downloads/found_files.zip"
 
 found_files = []
 
@@ -29,7 +29,7 @@ with open(csv_path, 'r') as csvfile:
             print("File not found:", file_name)
 
 if found_files:
-    zip_file_name = "found_files.zip"
+    zip_file_name = os.path.expanduser(write_path)
     
     with zipfile.ZipFile(zip_file_name, mode='w') as zip_file:
         for file_path in found_files:
