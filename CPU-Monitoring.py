@@ -2,7 +2,7 @@ import csv
 import psutil
 import time
 
-interval = 2
+interval = 5
 
 output_file = "CPU_MONITORED_DATA.csv"
 
